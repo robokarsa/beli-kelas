@@ -908,7 +908,7 @@
                   </button>
                   <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
                     <strong>Baik! </strong>Form pembelian kelas Anda sudah terkirim, mohon nantikan konfirmasi dari kami melalui WhatsApp.
-                    <button type="button" id="close-btn" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" id="close-btn" class="btn-close" aria-label="Close"></button>
                   </div>
                 </div>
               </form>
@@ -1306,8 +1306,8 @@
 <script>
 	// Attach event listener to first close popup and then refresh page
 	document.getElementById('close-btn').addEventListener('click', (e) => {
-		window.location.reload();
-	});
+    document.querySelector(".my-alert").classList.add('d-none');
+  });
 </script>
 
   </body>
