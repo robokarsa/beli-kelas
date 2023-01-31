@@ -782,59 +782,130 @@
           </div>
           <div class="row justify-content-center mb-4">
             <div class="col-md-9">
-              <form name="beli-kelas-form">
-                <h3><strong>Data Siswa</strong></h3>
+              <form class="row g-3 needs-validation" name="beli-kelas-form" novalidate>
+                <h3><strong>Informasi Siswa</strong></h3>
                 <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Nama Lengkap</label>
-                  <input name="namaLengkapAnak" type="text" class="form-control" id="namaLengkapAnak" aria-describedby="namaLengkapAnak" placeholder="Silahkan isikan nama lengkap anak" />
+                  <label for="validationCustom01" class="form-label">Nama Lengkap</label>
+                  <input name="namaLengkapAnak" type="text" class="form-control" placeholder="Silahkan isikan nama lengkap anak" required>
+                  <div class="valid-feedback">
+                    Namanya bagus.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
+                </div>
+                 <div class="mb-3">
+                  <label for="validationCustom01" class="form-label">Nama Panggilan</label>
+                  <input name="namaPanggilanAnak" type="text" class="form-control" placeholder="Kami harus memanggilnya siapa?" required>
+                  <div class="valid-feedback">
+                    Baik, kami akan memanggilnya dengan nama itu.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Nama Panggilan</label>
-                  <input name="namaPanggilanAnak" type="text" class="form-control" id="namaPanggilanAnak" aria-describedby="namaPanggilanAnak" placeholder="Dengan siapa kami harus memanggilnya?." />
+                  <label for="validationCustom01" class="form-label">Jenis Kelamin</label>
+                  <input name="jenisKelamin" type="text" class="form-control"  placeholder="Laki/Perempuan?" required>
+                  <div class="valid-feedback">
+                    Oke, sudah kami catat.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Jenis Kelamin</label>
-                  <input name="jenisKelamin" type="text" class="form-control" id="jenisKelamin" aria-describedby="jenisKelamin" placeholder="Laki / Perempuan?" />
+                  <label for="validationCustom02" class="form-label">Usia Anak</label>
+                  <input name="usiaAnak" type="text" class="form-control" placeholder="Usia sang anak saat ini berapa tahun?" required>
+                  <div class="valid-feedback">
+                    Baik, sudah kami catat.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="number" class="form-label fs-5">Usia</label>
-                  <input name="usiaAnak" type="number" class="form-control" id="usiaAnak" aria-describedby="usiaAnak" placeholder="Berapa usia anak Anda saat ini?" />
+                  <label for="validationCustom02" class="form-label">Asal Sekolah</label>
+                  <input name="asalSekolahAnak" type="text" class="form-control" placeholder="Saat ini anak bersekolah dimana?" required>
+                  <div class="valid-feedback">
+                    Baik, sudah kami catat.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Asal Sekolah</label>
-                  <input name="asalSekolahAnak" type="text" class="form-control" id="asalSekolahAnak" aria-describedby="asalSekolahAnak" placeholder="Dimana anak Anda bersekolah saat ini?" />
+                  <label for="validationCustom02" class="form-label">Kelas</label>
+                  <input name="kelas" type="text" class="form-control" placeholder="Saat ini anak kelas berapa?" required>
+                  <div class="valid-feedback">
+                    Baik, sudah kami catat.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="validationCustom03" class="form-label">Akun Instagram Anak</label>
+                  <input name="sosmedAnak" type="text" class="form-control" placeholder="Contoh: robokarsa.id">
+                  <div id="SosmedHelp" class="form-text">
+                    Anak tidak harus sudah memiliki akun Instagram ketika mendaftar. Boleh diisi dengan akun sosial media Orangtua atau dikosongkan jika anak belum memiliki Sosial Media atau Parents tidak ingin membagikan Sosial Media Anak.
+                  </div>
+                </div>
+                <h3><strong>Informasi Orangtua/Wali</strong></h3>
+                <div class="mb-3">
+                  <label for="validationCustom01" class="form-label">Nama Lengkap Orangtua/Wali</label>
+                  <input name="namaLengkapWali" type="text" class="form-control" placeholder="Silahkan isikan nama lengkap orangtua/wali" required>
+                  <div class="valid-feedback">
+                    Baik, kami sudah mencatatnya.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="number" class="form-label fs-5">Kelas</label>
-                  <input name="kelas" type="number" class="form-control" id="kelas" aria-describedby="kelas" placeholder="Saat ini kelas berapa?" />
+                  <label for="validationCustom01" class="form-label">Pekerjaan</label>
+                  <input name="pekerjaanWali" type="text" class="form-control" placeholder="Silahkan isikan pekerjaan orangtua/wali saat ini" required>
+                  <div class="valid-feedback">
+                    Baik, sudah mencatatnya.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Akun Instagram Siswa</label>
-                  <input name="sosmedAnak" type="text" class="form-control" id="sosmedAnak" aria-describedby="sosmedAnak" placeholder="Kosongkan jika anak belum diperbolehkan mempunyai sosmed"/>
-                </div>
-                <h3><strong>Data Orangtua/Wali</strong></h3>
-                <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Nama</label>
-                  <input name="namaLengkapWali" type="text" class="form-control" id="namaLengkapWali" aria-describedby="namaLengkapWali" placeholder="Silahkan isikan nama Orangtua/Wali" />
-                </div>
-                <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Pekerjaan</label>
-                  <input name="pekerjaanWali" type="text" class="form-control" id="pekerjaanWali" aria-describedby="pekerjaanWali" placeholder="Silahkan pekerjaan Orangtua/Wali saat ini" />
+                  <label for="validationCustom01" class="form-label">Pendidikan Terakhir</label>
+                  <input name="pendidikanWali" type="text" class="form-control" placeholder="SD/SMP/SMA/S1/S2/S3/D3?" required>
+                  <div class="valid-feedback">
+                    Baik, kami sudah mencatatnya.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Pendidikan Terakhir</label>
-                  <input name="pendidikanWali" type="text" class="form-control" id="pendidikanWali" aria-describedby="pendidikanWali" placeholder="SD/SMP/SMU/D3/S1/S2/S3" />
-                </div>
-                <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Alamat</label>
-                  <input name="alamatWali" type="text" class="form-control" id="alamatWali" aria-describedby="alamatWali" placeholder="Isikan dengan alamat tempat Orangtua/Wali tinggal" />
+                  <label for="validationCustom02" class="form-label">Alamat Orangtua/Wali</label>
+                  <input name="alamaatWali" type="text" class="form-control" placeholder="Silahkan isi dengan alamat orangtua/wali saat ini" required>
+                  <div class="valid-feedback">
+                    Baik, kami sudah mencatatnya.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                 </div>
                 <h3><strong>Program</strong></h3>
                 <div class="mb-3">
-                  <label for="number" class="form-label fs-5">Kelas yang dipilih</label>
-                  <input name="pilihanKelas" type="tel" class="form-control" id="pilihanKelas" aria-describedby="pilihanKelas" placeholder="Contoh: A. Double Buy" />
+                  <label for="validationCustom02" class="form-label fs-5">Kelas yang dipilih</label>
+                  <input name="pilihanKelas" name="pilihanKelas" type="tel" class="form-control" aria-describedby="pilihanKelas" placeholder="Contoh: A. Double Buy" required/>
+                  <div class="valid-feedback">
+                    Baik, kami sudah mencatatnya.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
                   <ul>
-                    <li><div id="classHelp" class="form-text">
+                    <li>
+                      <div id="classHelp" class="form-text">
                       Masukkan kode kelas yang ingin dibeli dari pilihan berikut ini.
                     </div>
                     <div class="container">
@@ -872,9 +943,15 @@
                   </ul>
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label fs-5">Masukkan hari dan waktu <strong>Kelas Rutin</strong></label>
-                  <input name="routineDate" type="text" class="form-control" id="trialDate" aria-describedby="trialDate" placeholder="Contoh: Senin, 7 Februari 2023 16.00" />
-                  <div id="WANumberHelp" class="form-text">
+                  <label for="validationCustom02" class="form-label fs-5">Masukkan hari dan waktu <strong>Kelas Rutin</strong></label>
+                  <input name="routineDate" name="routineDate" type="text" class="form-control" aria-describedby="trialDate" placeholder="Contoh: Senin, 7 Februari 2023 16.00" required/>
+                  <div class="valid-feedback">
+                    Baik, kami sudah mencatatnya.
+                  </div>
+                  <div class="invalid-feedback">
+                    Tolong diisi.
+                  </div>
+                  <div class="form-text">
                     Jadwal yang dimasukkan akan menjadi jadwal kelas rutin yang akan dihadiri anak setiap minggunya.
                   </div>
                   <div id="trial-date" class="form-text">Pilihan yang tersedia: 
@@ -886,8 +963,8 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <label for="number" class="form-label fs-5">Nomor kontak WhatsApp Orangtua/Wali</label>
-                  <input name="kontakWA" type="tel" class="form-control" id="kontakWA" aria-describedby="kontakWA" placeholder="Pastikan nomor sudah benar." />
+                  <label for="validationCustom02" class="form-label fs-5">Nomor kontak WhatsApp Orangtua/Wali</label>
+                  <input name="kontakWA" name="kontakWA" type="tel" class="form-control" id="validationCustom02" aria-describedby="kontakWA" placeholder="Pastikan nomor sudah benar." required/>
                   <ul>
                     <li> <div id="WANumberHelp" class="form-text">
                       Pastikan agar mengisi nomor kontak WA yang aktif agar kami dapat menghubungi Anda untuk mengkonfirmasi ketersediaan kelas yang diinginkan. Kami akan mengkonfirmasi Anda kembali dalam waktu 5 jam setelah Anda mendaftar.
@@ -899,6 +976,17 @@
                       Diharapkan siswa membawa laptop sendiri. Akan disediakan WiFi di kelas.
                     </div></li>
                   </ul>
+                </div> -->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
                 </div>
                 <div class="d-grid gap-2 col-3 mx-auto">
                   <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
@@ -906,11 +994,14 @@
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Mengirim...
                   </button>
-                  <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                  <div id="notif" class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
                     <strong>Baik! </strong>Form pembelian kelas Anda sudah terkirim, mohon nantikan konfirmasi dari kami melalui WhatsApp.
                     <button type="button" id="close-btn" class="btn-close" aria-label="Close"></button>
                   </div>
                 </div>
+                <!-- <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div> -->
               </form>
             </div>
           </div>
@@ -1280,15 +1371,44 @@
     <script src="assets/js/main.js"></script>
 
     <!-- For Coba Gratis Forms -->
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxION9BrNMq7LHx8a2uFMS0je7oYsmVJVRTUm2fYiRQcyFDmWm-nXXAkxz4OVyszkk6mw/exec";
-      const form = document.forms["beli-kelas-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+<script>
+	// Attach event listener to first close popup and then refresh page
+	document.getElementById('close-btn').addEventListener('click', (e) => {
+  document.querySelector(".my-alert").classList.add('d-none');
+  });
+</script>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
+<script>
+  (function () {
+  'use strict'
+  
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxION9BrNMq7LHx8a2uFMS0je7oYsmVJVRTUm2fYiRQcyFDmWm-nXXAkxz4OVyszkk6mw/exec";
+  const form = document.forms["beli-kelas-form"];
+  const btnKirim = document.querySelector(".btn-kirim");
+  const btnLoading = document.querySelector(".btn-loading");
+  const myAlert = document.querySelector(".my-alert");
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+  var notifClosed = document.getElementById('notif');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+          form.classList.add('was-validated')
+        }
+
+        else if(!notifClosed.classList.contains('d-none')){
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        else if(form.checkValidity && notifClosed.classList.contains('d-none')){
+        event.preventDefault();
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
@@ -1298,16 +1418,13 @@
             myAlert.classList.toggle("d-none");
             form.reset();
             console.log("Success!", response);
+            form.classList.remove('was-validated')
           })
           .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-
-<script>
-	// Attach event listener to first close popup and then refresh page
-	document.getElementById('close-btn').addEventListener('click', (e) => {
-    document.querySelector(".my-alert").classList.add('d-none');
-  });
+        }
+      }, false)
+    })
+})()
 </script>
 
   </body>
